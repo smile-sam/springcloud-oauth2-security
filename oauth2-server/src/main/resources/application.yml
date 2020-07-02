@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: oauth2-server
+  main:
+    allow-bean-definition-overriding: true
+  resources:
+    static-locations: classpath:/templates/,classpath:/static/
+
+server:
+  port: 8080
+logging:
+  pattern:
+    level: DEBUG
+  level:
+    org:
+      springframework:
+        security: DEBUG
